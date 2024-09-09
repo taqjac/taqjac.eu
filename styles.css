@@ -1,0 +1,45 @@
+:root {
+    color-scheme: light dark;
+    font-family: Inter, sans-serif;
+    font-feature-settings:
+        "liga" 1,
+        "calt" 1; /* fix for Chrome */
+}
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+body {
+    max-width: clamp(320px, 90%, 900px);
+    margin: auto;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: light-dark(#0d0d0d, #eeeeee);
+    background-color: light-dark(#eeeeee, #262626);
+}
+
+a:link {
+    color: light-dark(#bf532c, #a66249);
+}
+
+h1,
+h2,
+h3 {
+    text-wrap: balance;
+}
+h1 a {
+    text-decoration: none;
+    font-size: 3rem;
+}
+h2 {
+    font-size: 1.8rem;
+}
+img {
+    max-width: 100%;
+    heigh: auto;
+}
+p {
+    max-width: 60ch;
+}
