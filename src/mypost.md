@@ -2,6 +2,7 @@
 tags: post
 title: Hot Take—Social Media is Considered Harmful
 layout: post.njk
+date: 2025-01-24
 ---
 ## Section 0
 

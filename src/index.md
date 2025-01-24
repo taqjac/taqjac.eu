@@ -1,5 +1,7 @@
 ---
 layout: home.njk
-title: DETERITUS
+title: taqjac.eu
 ---
 <h1>{{ title }}</h1>
+
+Lorem
