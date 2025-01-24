@@ -17,12 +17,12 @@ module.exports = function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Blog Title",
-			subtitle: "This is a longer description about your blog.",
-			base: "https://example.com/",
+			title: "taqjac.eu",
+			subtitle: "Personal website.",
+			base: "https://taqjac.netlify.app/",
 			author: {
-				name: "Your Name",
-				email: "", // Optional
+				name: "Tiago Jacinto",
+				email: "taqjac@icloud.com", // Optional
 			}
 		}
 	});
