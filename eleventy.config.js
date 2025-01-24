@@ -1,6 +1,10 @@
 const { DateTime } = require("luxon");
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
+module.exports.config = {
+  templateFormats: ["html", "liquid", "njk"],
+};
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.setInputDirectory("src");
   eleventyConfig.setLayoutsDirectory("_layouts");
@@ -9,10 +13,10 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(date).toFormat('yyyy-MM-dd');
   });
   eleventyConfig.addPlugin(feedPlugin, {
-		type: "atom", // or "rss", "json"
+		type: "rss", // or "rss", "json"
 		outputPath: "/feed.xml",
 		collection: {
-			name: "posts", // iterate over `collections.posts`
+			name: "post", // iterate over `collections.posts`
 			limit: 10,     // 0 means no limit
 		},
 		metadata: {
